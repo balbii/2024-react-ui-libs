@@ -26,7 +26,7 @@ const Login: React.FC = () => {
         </Typography>
         <TextField label="Email" variant="outlined" margin="normal"  />
         <TextField label="Senha" variant="outlined" margin="normal" type="password"  />
-        <Button variant="contained" color="primary" >
+        <Button variant="contained" color="primary" onClick={() => navigate('/Feed')} >
           Entrar
         </Button>
         <Button 

@@ -12,10 +12,11 @@ const Cadastro: React.FC = () => {
     <Grid item xs={12} md={6}>
         <Box
           sx={{
-            backgroundImage: 'url(/src/image/balb.jfif)',
+            backgroundImage: 'url(/src/image/bal.jfif)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            height: '100%',
+            height: '95%',
+            mt: '2em',
           }}
         />
       </Grid>
@@ -27,7 +28,7 @@ const Cadastro: React.FC = () => {
         <TextField label="Nome" variant="outlined" margin="normal" />
         <TextField label="Email" variant="outlined" margin="normal"  />
         <TextField label="Senha" variant="outlined" margin="normal" type="password"  />
-        <Button variant="contained" color="primary" >
+        <Button variant="contained" color="primary"  onClick={() => navigate('/Login')} >
           Cadastrar
         </Button>
         <Button 
