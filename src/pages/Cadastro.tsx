@@ -21,7 +21,7 @@ const Cadastro: React.FC = () => {
         />
       </Grid>
       
-      <Grid item xs={12} md={6} container direction="column" alignItems="center" justifyContent="center">
+      <Grid item xs={12} md={6} container direction="column" alignItems="center" justifyContent="center" color="blue">
         <Typography variant="h4" gutterBottom>
           Cadastro
         </Typography>
