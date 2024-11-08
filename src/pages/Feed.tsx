@@ -1,5 +1,5 @@
-import React from 'react';
-import { Button, Box,} from '@mui/material';
+import React, { FormEvent } from 'react';
+import { Button, Box, Select, FormControl, InputLabel, MenuItem,} from '@mui/material';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
 
@@ -7,6 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 const Feed: React.FC = () => {
     const navigate = useNavigate();
+    function handleSubmit(_event: FormEvent<HTMLFormElement>): void {
+        throw new Error('Function not implemented.');
+    }
+
     return (
         <Box
    
@@ -28,6 +32,26 @@ const Feed: React.FC = () => {
             >
           Sair da conta
             </Button>
+
+            <form onSubmit={handleSubmit}>
+          <FormControl fullWidth>
+            <InputLabel id="demo-select-label">Escolha um valor</InputLabel>
+            <Select
+              defaultValue={10}
+              id="demo-select"
+              labelId="demo-select-label"
+              label="Choose a Number"
+            >
+              <MenuItem value={10}>Dez</MenuItem>
+              <MenuItem value={20}>Vinte</MenuItem>
+              <MenuItem value={30}>Trinta</MenuItem>
+            </Select>
+          </FormControl>
+
+          <Button sx={{ ml: 1 }} type="submit" variant="contained" color="primary">
+            Enviar
+          </Button>
+        </form>
 
             </Stack>
 

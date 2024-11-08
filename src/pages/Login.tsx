@@ -34,7 +34,7 @@ const Login: React.FC = () => {
           color="secondary" 
           onClick={() => navigate('/Cadastro')}
           style={{ marginTop: '16px' }}
-          fullWidth
+          
         >
           Não tem uma conta? Cadastre-se
         </Button>
